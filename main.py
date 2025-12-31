@@ -3,7 +3,7 @@ import streamlit as st
 
 
 
-Weather_API_key = st.secrets.get("openweather", {}).get("api_key")
+Weather_API_key = st.secrets["OPENWEATHER_API_KEY"]
 
 st.set_page_config(
 
