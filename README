@@ -1,0 +1,17 @@
+# ☁️ Simple Weather App
+
+A simple app to check the current weather for any city. Built using **Python** and **Streamlit**.
+
+> **🚧 Note:** This project is **Live** but still under construction. I am currently adding more features.
+
+---
+
+## 🔗 Live Demo
+👉 https://raj-muliyashiya-wether-app.hf.space/
+
+---
+
+## ✨ Features
+* **Check Weather:** Type a city name to get the temperature, wind, and humidity.
+* **Real-Time:** Uses the OpenWeatherMap API for live data.
+* **Simple UI:** Easy to use interface.
