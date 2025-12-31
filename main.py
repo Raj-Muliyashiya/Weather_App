@@ -32,7 +32,7 @@ def weather():
 
     if data["cod"] == 200:
 
-        st.space("medium")
+        st.markdown("\n\n")
         colls1,colls2,colls3,colls4,colls5 = st.columns(5)
 
         with colls3:
