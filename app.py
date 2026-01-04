@@ -1,9 +1,15 @@
 import requests
 import streamlit as st
+import json
 
 
 
-Weather_API_key = st.secrets["OPENWEATHER_API_KEY"]
+Weather_API_key = st.secrets['OPENWEATHER_API_KEY']
+
+with open('cities.json') as file:
+    cities = json.load(file)
+    allcities = [city['name'] for city in cities]
+
 
 st.set_page_config(
 
@@ -18,7 +24,9 @@ st.title("Weather App🌥️")
 col1 ,col2, col3 = st.columns(3)
 
 with col2:
-    city_name = st.text_input("",placeholder="City Name").strip()
+    city_name = st.selectbox('',allcities)
+
+
 
 
 def weather():
